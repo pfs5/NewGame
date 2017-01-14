@@ -3,7 +3,7 @@ project(NewGame)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp)
+set(SOURCE_FILES main.cpp settings/settings.h game_objects/Map.cpp game_objects/Map.h input/InputManager.cpp input/InputManager.h game_objects/GameObject.cpp game_objects/GameObject.h game_objects/Character.cpp game_objects/Character.h game_objects/PlayableCharacter.cpp game_objects/PlayableCharacter.h)
 add_executable(NewGame ${SOURCE_FILES})
 
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake_modules")
